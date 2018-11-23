@@ -92,6 +92,10 @@ public class PrebidServerAdapter implements DemandAdapter, ServerConnector.Serve
                 host = (Prebid.isSecureConnection()) ? Settings.RUBICON_REQUEST_URL_SECURE :
                         Settings.RUBICON_REQUEST_URL_NON_SECURE;
                 break;
+            case SORTABLE:
+                host = (Prebid.isSecureConnection()) ? Settings.SORTABLE_REQUEST_URL_SECURE :
+                        Settings.SORTABLE_REQUEST_URL_NON_SECURE;
+                break;
         }
         return host;
     }
