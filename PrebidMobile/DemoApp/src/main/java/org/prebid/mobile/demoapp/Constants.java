@@ -11,7 +11,7 @@ public class Constants {
 
     // MoPub Banner
     public static final String MOPUB_BANNER_ADUNIT_ID_320x50 = "32111d40151b400f9b70f45ed88e6ee9";
-    public static final String MOPUB_BANNER_ADUNIT_ID_300x250 = "a935eac11acd416f92640411234fbba6";
+    public static final String MOPUB_BANNER_ADUNIT_ID_300x250 = "a477c050091b43f4ae5bcdb410dce4f8";
 
     // MoPub Interstitial
     public static final String MOPUB_INTERSTITIAL_ADUNIT_ID_FULLSCREEN = "b75185a84336479c94eb22e5c0ca67db";
