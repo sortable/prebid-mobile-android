@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     
     <!-- SonaType Requirements -->
-    <name>Prebid Mobile Android SDK</name>
-    <description>Prebid Mobile</description>
-    <url>https://www.prebid.org</url>
+    <name>Sortable Prebid Mobile Android SDK</name>
+    <description>Sortable Prebid Mobile</description>
+    <url>https://www.sortable.com</url>
     <scm>
-        <connection>scm:git:git@github.com:prebid/prebid-mobile-android.git</connection>
-        <developerConnection>scm:git:git@github.com:prebid/prebid-mobile-android.git</developerConnection>
-        <url>git@github.com:prebid/prebid-mobile-android.git</url>
+        <connection>scm:git:git@github.com:sortable/prebid-mobile-android.git</connection>
+        <developerConnection>scm:git:git@github.com:sortable/prebid-mobile-android.git</developerConnection>
+        <url>git@github.com:sortable/prebid-mobile-android.git</url>
     </scm>
     <licenses>
         <license>
@@ -17,14 +17,14 @@
     </licenses>
     <developers>
         <developer>
-            <name>AppNexus Mobile Team</name>
-            <email>sdk@appnexus.com</email>
-            <organization>AppNexus, Inc.</organization>
-            <organizationUrl>http://www.appnexus.com</organizationUrl>
+            <name>Sortable Team</name>
+            <email>prebid@sortable.com</email>
+            <organization>Sortable</organization>
+            <organizationUrl>http://www.sortable.com</organizationUrl>
         </developer>
     </developers>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.prebid</groupId>
+    <groupId>com.sortable</groupId>
     <artifactId>prebid-mobile-sdk</artifactId>
     <version>0.5.3</version>
     <packaging>jar</packaging>
