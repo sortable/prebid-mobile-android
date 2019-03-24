@@ -53,7 +53,8 @@ public class Prebid {
 
     public enum Host {
         APPNEXUS,
-        RUBICON
+        RUBICON,
+        SORTABLE
     }
 
     //region Public APIs
