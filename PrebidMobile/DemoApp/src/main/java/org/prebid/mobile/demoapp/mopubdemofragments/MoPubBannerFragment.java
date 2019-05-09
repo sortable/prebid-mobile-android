@@ -13,6 +13,7 @@ import android.widget.FrameLayout;
 import com.mopub.mobileads.MoPubErrorCode;
 import com.mopub.mobileads.MoPubView;
 
+import org.prebid.mobile.core.LogUtil;
 import org.prebid.mobile.core.Prebid;
 import org.prebid.mobile.demoapp.Constants;
 import org.prebid.mobile.demoapp.R;
@@ -101,6 +102,7 @@ public class MoPubBannerFragment extends Fragment implements Prebid.OnAttachComp
 
     @Override
     public void onBannerFailed(MoPubView banner, MoPubErrorCode errorCode) {
+        LogUtil.e("MoPub", "Saw error code " + errorCode + " for " + banner.getAdUnitId() + " | " + banner.getAdWidth() +"x" + banner.getAdHeight());
     }
 
     @Override

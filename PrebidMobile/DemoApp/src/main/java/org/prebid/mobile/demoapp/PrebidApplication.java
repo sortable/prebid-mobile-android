@@ -78,6 +78,7 @@ public class PrebidApplication extends Application {
         TargetingParams.setUserTargeting("PrebidKey2", null); // this should add "PrebidKey2" in user.keywords in ortb request
         TargetingParams.setUserTargeting(null, "PrebidValue2"); // this should add nothing
         TargetingParams.setUserTargeting(null, null); // this should add nothing
+        TargetingParams.setUserTargeting("sortable-prebid-test", "0.50");
 
         // Register ad units for prebid.
         try {

@@ -28,7 +28,7 @@ public class Settings {
     public static final String RUBICON_REQUEST_URL_NON_SECURE = "http://prebid-server.rubiconproject.com/openrtb2/auction";
     public static final String RUBICON_REQUEST_URL_SECURE = "https://prebid-server.rubiconproject.com/openrtb2/auction";
     public static final String SORTABLE_REQUEST_URL_NON_SECURE = "http://c.deployads.com/pbs/openrtb2/auction";
-    public static final String SORTABLE_REQUEST_URL_SECURE = "https://c.deployads.com/pbs/openrtb2/auction";
+    public static final String SORTABLE_REQUEST_URL_SECURE = "http://c.deployads.com/pbs/openrtb2/auction";
 
     public static int connectionTimeOutMillis = 500;
     // request keys
