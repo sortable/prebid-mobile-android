@@ -149,16 +149,21 @@ public class Prebid {
         BidManager.requestBidsForAdUnits(context, adUnits);
     }
 
+    private static boolean isInstanceOf(Object o, String className) {
+        Class klass = getClassFromString(MOPUB_ADVIEW_CLASS);
+        return klass != null && klass.isInstance(o);
+    }
+
     public static void attachBids(Object adObj, String adUnitCode, Context context) {
         if (adObj == null) {
             //LogUtil.e(TAG, "Request is null, unable to set keywords");
         } else {
             detachUsedBid(adObj);
 
-            if (adObj.getClass() == getClassFromString(MOPUB_ADVIEW_CLASS)
-                    || adObj.getClass() == getClassFromString(MOPUB_INTERSTITIAL_CLASS)) {
+            if (isInstanceOf(adObj, MOPUB_ADVIEW_CLASS)
+                    || isInstanceOf(adObj, MOPUB_INTERSTITIAL_CLASS)) {
                 handleMoPubKeywordsUpdate(adObj, adUnitCode, context);
-            } else if (adObj.getClass() == getClassFromString(DFP_ADREQUEST_CLASS)) {
+            } else if (isInstanceOf(adObj, DFP_ADREQUEST_CLASS)) {
                 handleDFPCustomTargetingUpdate(adObj, adUnitCode, context);
             }
         }
@@ -166,9 +171,9 @@ public class Prebid {
 
     public static void detachUsedBid(Object adObj) {
         if (adObj != null) {
-            if (adObj.getClass() == getClassFromString(MOPUB_ADVIEW_CLASS)) {
+            if (isInstanceOf(adObj, MOPUB_ADVIEW_CLASS)) {
                 removeUsedKeywordsForMoPub(adObj);
-            } else if (adObj.getClass() == getClassFromString(DFP_ADREQUEST_CLASS)) {
+            } else if (isInstanceOf(adObj, DFP_ADREQUEST_CLASS)) {
                 removeUsedCustomTargetingForDFP(adObj);
             }
         }
