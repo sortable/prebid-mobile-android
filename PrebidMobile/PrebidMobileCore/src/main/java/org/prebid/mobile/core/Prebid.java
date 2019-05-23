@@ -150,7 +150,7 @@ public class Prebid {
     }
 
     private static boolean isInstanceOf(Object o, String className) {
-        Class klass = getClassFromString(MOPUB_ADVIEW_CLASS);
+        Class klass = getClassFromString(className);
         return klass != null && klass.isInstance(o);
     }
 
